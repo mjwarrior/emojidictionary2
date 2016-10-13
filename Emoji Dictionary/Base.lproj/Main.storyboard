@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -36,6 +37,46 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="124" y="37"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="ZiU-Sx-alh">
+            <objects>
+                <viewController id="kHt-p7-asj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="AJf-Ac-PHm"/>
+                        <viewControllerLayoutGuide type="bottom" id="MQu-qo-5XE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="LUK-b1-Hsw">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="🐶" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ggs-LC-kcv">
+                                <frame key="frameInset" minX="147" minY="135" width="81" height="102"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="105"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="this a dog" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uf6-d9-BSA">
+                                <frame key="frameInset" minX="145" minY="323" width="85" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ggs-LC-kcv" firstAttribute="centerX" secondItem="LUK-b1-Hsw" secondAttribute="centerX" id="7fA-6o-wXY"/>
+                            <constraint firstItem="Uf6-d9-BSA" firstAttribute="top" secondItem="ggs-LC-kcv" secondAttribute="bottom" constant="86" id="C9H-Qb-n2O"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Uf6-d9-BSA" secondAttribute="trailing" constant="90" id="jHr-kd-xJk"/>
+                            <constraint firstItem="Uf6-d9-BSA" firstAttribute="leading" secondItem="LUK-b1-Hsw" secondAttribute="leadingMargin" constant="90" id="k6U-Vc-XFz"/>
+                            <constraint firstItem="ggs-LC-kcv" firstAttribute="top" secondItem="AJf-Ac-PHm" secondAttribute="bottom" constant="40" id="kTo-tM-2KJ"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bhw-qO-Ml3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="917.60000000000002" y="37.331334332833585"/>
         </scene>
     </scenes>
 </document>
